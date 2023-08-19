@@ -1,0 +1,14 @@
+function addEnding(arr, ending) {
+	var newArr = [];
+    arr.forEach(e => {
+        newArr.push(e.concat(ending))
+        
+    });
+    return newArr
+}
+console.log(addEnding(['clev
+er', 'meek', 'hurried', 'nice'], 'ly'), ['cleverly', 'meekly', 'hurriedly', 'nicely'])
+console.log(addEnding(['new', 'pander', 'scoop'], 'er'), ['newer', 'panderer', 'scooper'])
+console.log(addEnding(['bend', 'sharpen', 'mean'], 'ing'), ['bending', 'sharpening', 'meaning'])
+console.log(addEnding(['bend', 'tooth', 'mint'], 'y'), ['bendy', 'toothy', 'minty'])
+console.log(addEnding(['bend', 'tooth', 'mint'], 'ier'), ['bendier', 'toothier', 'mintier'])
