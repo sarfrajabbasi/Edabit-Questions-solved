@@ -1,0 +1,131 @@
+function showdown(p1,p2){
+    let arr1 = p1.split("")
+    let arr2 = p2.split("")
+    if(arr1.indexOf('B')>arr2.indexOf('B')){
+        return "p2"
+    }else if(arr1.indexOf('B')<arr2.indexOf('B')){
+        return "p1"
+    }
+    return "tie"
+}
+console.log(showdown(
+    "   Bang!        ",
+    "        Bang!   "
+    ), "p1")
+    
+    console.log(showdown(
+    "               Bang! ",
+    "             Bang!   "
+    ), "p2")
+    
+    console.log(showdown(
+    "  Bang!   ",
+    "Bang!     "
+    ), "p2")
+    
+    console.log(showdown(
+    "     Bang!   ",
+    "     Bang!   "
+    ), "tie")
+    
+    console.log(showdown("  Bang!     ", "     Bang!  "), "p1")
+    console.log(showdown(" Bang!  ", "  Bang! "), "p1")
+    console.log(showdown("          Bang!       ", "       Bang!          "), "p2")
+    console.log(showdown("    Bang!    ", "    Bang!    "), "tie")
+    console.log(showdown("       Bang!       ", "       Bang!       "), "tie")
+    console.log(showdown(" Bang!      ", "      Bang! "), "p1")
+    console.log(showdown(" Bang!  ", "  Bang! "), "p1")
+    console.log(showdown("       Bang!      ", "      Bang!       "), "p2")
+    console.log(showdown("         Bang!    ", "    Bang!         "), "p2")
+    console.log(showdown("   Bang!        ", "        Bang!   "), "p1")
+    console.log(showdown("      Bang! ", " Bang!      "), "p2")
+    console.log(showdown("  Bang!          ", "          Bang!  "), "p1")
+    console.log(showdown("        Bang!    ", "    Bang!        "), "p2")
+    console.log(showdown("     Bang!     ", "     Bang!     "), "tie")
+    console.log(showdown("       Bang!   ", "   Bang!       "), "p2")
+    console.log(showdown("  Bang! ", " Bang!  "), "p2")
+    console.log(showdown(" Bang!      ", "      Bang! "), "p1")
+    console.log(showdown("  Bang!      ", "      Bang!  "), "p1")
+    console.log(showdown(" Bang!       ", "       Bang! "), "p1")
+    console.log(showdown("    Bang!  ", "  Bang!    "), "p2")
+    console.log(showdown("      Bang!        ", "        Bang!      "), "p1")
+    console.log(showdown("          Bang!      ", "      Bang!          "), "p2")
+    console.log(showdown("       Bang!        ", "        Bang!       "), "p1")
+    console.log(showdown("         Bang! ", " Bang!         "), "p2")
+    console.log(showdown(" Bang!   ", "   Bang! "), "p1")
+    console.log(showdown("  Bang!  ", "  Bang!  "), "tie")
+    console.log(showdown("      Bang!          ", "          Bang!      "), "p1")
+    console.log(showdown("      Bang!      ", "      Bang!      "), "tie")
+    console.log(showdown("         Bang!         ", "         Bang!         "), "tie")
+    console.log(showdown("       Bang! ", " Bang!       "), "p2")
+    console.log(showdown(" Bang!    ", "    Bang! "), "p1")
+    console.log(showdown("     Bang!   ", "   Bang!     "), "p2")
+    console.log(showdown("   Bang!       ", "       Bang!   "), "p1")
+    console.log(showdown("    Bang!       ", "       Bang!    "), "p1")
+    console.log(showdown("         Bang!         ", "         Bang!         "), "tie")
+    console.log(showdown("   Bang!      ", "      Bang!   "), "p1")
+    console.log(showdown("   Bang!   ", "   Bang!   "), "tie")
+    console.log(showdown("       Bang!    ", "    Bang!       "), "p2")
+    console.log(showdown("  Bang!     ", "     Bang!  "), "p1")
+    console.log(showdown("     Bang!  ", "  Bang!     "), "p2")
+    console.log(showdown("   Bang! ", " Bang!   "), "p2")
+    console.log(showdown("    Bang!   ", "   Bang!    "), "p2")
+    console.log(showdown(" Bang! ", " Bang! "), "tie")
+    console.log(showdown("       Bang!   ", "   Bang!       "), "p2")
+    console.log(showdown("  Bang! ", " Bang!  "), "p2")
+    console.log(showdown("        Bang!  ", "  Bang!        "), "p2")
+    console.log(showdown("   Bang!   ", "   Bang!   "), "tie")
+    console.log(showdown("       Bang! ", " Bang!       "), "p2")
+    console.log(showdown("    Bang!        ", "        Bang!    "), "p1")
+    console.log(showdown("  Bang!         ", "         Bang!  "), "p1")
+    console.log(showdown("     Bang!     ", "     Bang!     "), "tie")
+    console.log(showdown("         Bang!    ", "    Bang!         "), "p2")
+    console.log(showdown("         Bang!         ", "         Bang!         "), "tie")
+    console.log(showdown("  Bang!    ", "    Bang!  "), "p1")
+    console.log(showdown("  Bang!        ", "        Bang!  "), "p1")
+    console.log(showdown("     Bang!       ", "       Bang!     "), "p1")
+    console.log(showdown("    Bang!       ", "       Bang!    "), "p1")
+    console.log(showdown("        Bang!        ", "        Bang!        "), "tie")
+    console.log(showdown("          Bang!   ", "   Bang!          "), "p2")
+    console.log(showdown("  Bang!      ", "      Bang!  "), "p1")
+    console.log(showdown("  Bang!    ", "    Bang!  "), "p1")
+    console.log(showdown("    Bang!       ", "       Bang!    "), "p1")
+    console.log(showdown("       Bang! ", " Bang!       "), "p2")
+    console.log(showdown("  Bang!        ", "        Bang!  "), "p1")
+    console.log(showdown("         Bang!          ", "          Bang!         "), "p1")
+    console.log(showdown("         Bang!    ", "    Bang!         "), "p2")
+    console.log(showdown("     Bang!  ", "  Bang!     "), "p2")
+    console.log(showdown("       Bang!      ", "      Bang!       "), "p2")
+    console.log(showdown("    Bang!          ", "          Bang!    "), "p1")
+    console.log(showdown("         Bang!   ", "   Bang!         "), "p2")
+    console.log(showdown("    Bang!        ", "        Bang!    "), "p1")
+    console.log(showdown("      Bang!  ", "  Bang!      "), "p2")
+    console.log(showdown("       Bang!          ", "          Bang!       "), "p1")
+    console.log(showdown("    Bang!          ", "          Bang!    "), "p1")
+    console.log(showdown("      Bang!      ", "      Bang!      "), "tie")
+    console.log(showdown("     Bang!        ", "        Bang!     "), "p1")
+    console.log(showdown("     Bang!         ", "         Bang!     "), "p1")
+    console.log(showdown("    Bang!         ", "         Bang!    "), "p1")
+    console.log(showdown(" Bang!          ", "          Bang! "), "p1")
+    console.log(showdown("       Bang!  ", "  Bang!       "), "p2")
+    console.log(showdown("        Bang!     ", "     Bang!        "), "p2")
+    console.log(showdown("          Bang!      ", "      Bang!          "), "p2")
+    console.log(showdown("    Bang!         ", "         Bang!    "), "p1")
+    console.log(showdown("       Bang!         ", "         Bang!       "), "p1")
+    console.log(showdown("   Bang!     ", "     Bang!   "), "p1")
+    console.log(showdown("  Bang!  ", "  Bang!  "), "tie")
+    console.log(showdown("    Bang!         ", "         Bang!    "), "p1")
+    console.log(showdown("     Bang!         ", "         Bang!     "), "p1")
+    console.log(showdown("     Bang!      ", "      Bang!     "), "p1")
+    console.log(showdown("          Bang!  ", "  Bang!          "), "p2")
+    console.log(showdown("     Bang!   ", "   Bang!     "), "p2")
+    console.log(showdown(" Bang!    ", "    Bang! "), "p1")
+    console.log(showdown(" Bang!   ", "   Bang! "), "p1")
+    console.log(showdown("   Bang!          ", "          Bang!   "), "p1")
+    console.log(showdown("    Bang!    ", "    Bang!    "), "tie")
+    console.log(showdown("    Bang!    ", "    Bang!    "), "tie")
+    console.log(showdown("        Bang!  ", "  Bang!        "), "p2")
+    console.log(showdown("         Bang!       ", "       Bang!         "), "p2")
+    console.log(showdown("       Bang!   ", "   Bang!       "), "p2")
+    console.log(showdown("   Bang!   ", "   Bang!   "), "tie")
+    
